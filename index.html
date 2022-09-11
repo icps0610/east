@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+    <title>TaiwanLiveCam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+</head>
+<body class="container-fluid">
+    <div class="row">
+        <div class="col"><iframe id="u0"></iframe></div>
+        <div class="col"><iframe id="u1"></iframe></div>
+        <div class="col"><iframe id="u2"></iframe></div>
+        <div class="col"><iframe id="u3"></iframe></div>
+    </div>
+    <div class="row">
+        <div class="col"><iframe id="u4"></iframe></div>
+        <div class="col"><iframe id="u5"></iframe></div>
+        <div class="col"><iframe id="u6"></iframe></div>
+        <div class="col"><iframe id="u7"></iframe></div>
+    </div>
+    <div class="row">
+        <div class="col"><iframe id="u8"></iframe></div>
+        <div class="col"><iframe id="u9"></iframe></div>
+        <div class="col"><iframe id="u10"></iframe></div>
+        <div class="col"><iframe id="u11"></iframe></div>
+    </div>
+    <div class="row">
+        <div class="col"><iframe id="u12"></iframe></div>
+        <div class="col"><iframe id="u13"></iframe></div>
+        <div class="col"><iframe id="u14"></iframe></div>
+        <div class="col"><iframe id="u15"></iframe></div>
+    </div>
+</body>
+
+<style>
+* {    
+    background-color: #000000;
+    overflow: hidden;
+    border: none;
+}
+
+iframe {
+    width: 24vw;
+    height: 24.3vh;
+    transform:scale(1.30)
+}
+</style>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script charset="UTF-8">
+var u2html = "https://www.youtube.com/embed/";
+
+var 台北象山      = "z_fY1pj1VBw";
+var 台北河岸1     = "xr9a3GHNPzc";
+var 台北河岸2     = "kUx8kGz8-0g";
+var 淡水老街      = "DNBPoRA6fB4";
+var 淡水漁人碼頭   = "xwAWSh35uuw";
+var 新北市白沙灣   = "St4GHsJzfg4";
+var 基隆和平島公園 = "mzxhj93qX7g";
+var 桃園虎頭山     = "kS_KfRgze-0";
+var 桃園石門水庫   = "1OTZ9rjFv78";
+var 桃園大溪老街   = "z_mlibCfgFI";
+var 台中望高寮     = "lhXXhDyjFtI";
+var 台中高美濕地   = "fjhg3gAnMFg";
+var 宜蘭礁溪       = "cPh2vzrtG_w";
+var 花蓮七星潭     = "hq4QsXmdPhc";
+var 花蓮七星潭2    = "tWdI0YfY93Y";
+var 花蓮壽豐       = "oM1OOjGvmTA";
+var 花蓮六十石山   = "BWrRFJoOV9c";
+var 花蓮赤柯山     = "gxOdykEMicA";
+var 花蓮忘憂亭     = "Ic6hqus0tjA";
+var 花蓮鯉魚潭     = "YlxWDwTUtxg";
+var 東部金樽       = "ZdqHgQwvZOw";
+var 東部三仙台     = "jFJ59-9tTyM";
+var 東部加路蘭     = "ce4RYcnuXPA";
+var 東部大石鼻山   = "8qi9InV0qks";
+var 東部長虹橋     = "aYqW-1QJ0ts";
+var 東部都歷       = "Hb7MeMTVGdM";
+var 東部石梯坪     = "fcX1Gl4nlJ8";
+var 綠島           = "wTHhv7M0vCI";
+var 台東鹿野       = "KkDSzZcqQTQ";
+var 台東多良車站   = "UCG1aXVO8H8";
+var 台南黃金海岸   = "yeoV-wBdoxQ";
+var 高雄旗津      = "1xFXOWENQg0";
+var 高雄壽山       = "C03Itx8iSC0";
+var 高雄蓮池潭     = "dCycHSYZBmg";
+var 墾丁南灣       = "oTXJlZKnlq0";
+var 墾丁萬里桐     = "fmTjiCefanI";
+var 金門建功嶼     = "uh_yNAE01w8";
+var 南竿福澳港   = "g-UAUkDsRSs";
+var 北海坑道廣場 = "e4VJS-ZAJj4";
+var 北海坑道海邊 = "nMK1GUTjbbc";
+var 北竿議會角度 = "6GXK2XMGgUc";
+var 北竿白沙港   = "g1Elfy8Zq0A";
+var 東莒猛澳港   = "6VzbrhvaRnw";
+var 西莒青帆港   = "R3geopUJojU";
+var 東引中柱港   = "d-uG7fiabCE";
+var 東引中柱港2  = "kVdihwULHWE";
+var 南竿機場候機室 = "HwUzhqm259g";
+var 南竿機場出口   = "UvA6JKyU6-g";
+var 北竿機場候機室 = "EaUVZ49xKQ4";
+
+var array = [東部都歷,東部石梯坪,台東鹿野,台東多良車站,
+            東部三仙台,東部加路蘭,東部大石鼻山,東部長虹橋,
+            花蓮壽豐,花蓮六十石山,花蓮赤柯山,東部金樽,
+            花蓮七星潭,花蓮七星潭2,花蓮忘憂亭,花蓮鯉魚潭,
+];
+for (var idx in array) {
+    document.getElementById("u" + idx).src = u2html + array[idx] + "?enablejsapi=1&afmt=55";
+}
+
+function onYouTubeIframeAPIReady() {
+    for (var idx in array) {
+        new YT.Player("u" + idx, {events:{'onReady': onPlayerReady }});
+    }
+}
+
+function onPlayerReady(event) {
+    event.target.mute().playVideo();
+}
+
+</script>
+
+</html>
